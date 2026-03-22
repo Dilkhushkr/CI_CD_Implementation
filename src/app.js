@@ -11,8 +11,12 @@ app.get("/", (req, res) => {
 
 app.get("/todos",(req, res) => {
     res.json(todos)
-})
+});
 
+
+app.get("ci_cd", (req, res) => {
+  res.send("CI/CD Pipeline Test");
+});
 
 app.post("/todos", (req, res) => {
   const todo = { id: Date.now(), text: req.body.text };
