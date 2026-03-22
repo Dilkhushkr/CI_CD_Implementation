@@ -14,7 +14,7 @@ app.get("/todos",(req, res) => {
 });
 
 
-app.get("ci_cd", (req, res) => {
+app.get("/ci_cd", (req, res) => {
   res.send("CI/CD Pipeline Test");
 });
 
