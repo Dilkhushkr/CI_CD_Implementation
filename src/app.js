@@ -24,6 +24,10 @@ app.post("/todos", (req, res) => {
   res.status(201).json(todo);
 });
 
+app.get('/new_testing', (req, res) => {
+  res.send('New Testing Endpoint');
+});
+
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
